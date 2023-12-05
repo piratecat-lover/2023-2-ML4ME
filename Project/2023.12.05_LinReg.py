@@ -16,6 +16,7 @@ rawdata=pd.read_csv(path_to_file)
 # 'back_vehicle_position', 'back_vehicle_speed', 'back_vehicle_acceleration', 
 # 'ego_speed', 'ego_acceleration'
 # 'ego_speed' is the target variable, accelerations are for later.
+# Add road conditions, traffic congestion as features.
 
 # Split dataset into train and test
 X_train, X_test, y_train, y_test = train_test_split(rawdata, rawdata['ego_speed'], test_size=0.2, random_state=42)
