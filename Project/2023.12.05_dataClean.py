@@ -9,9 +9,7 @@
 
 # Index: Frame ID
 
-
-
-
+# minimum data - at least 3000 frames
 
 # Additional Features
 # Feature 5: front vehicle acceleration (m/s^2)
