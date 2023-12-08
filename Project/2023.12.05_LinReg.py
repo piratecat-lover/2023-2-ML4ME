@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 
 
 # Prepare dataset
-path_to_file='/data/file.csv'
+path_to_file='/filtered-datasets/us_concat_hs_set1_filtered.csv'
 rawdata=pd.read_csv(path_to_file)
 # dataset should have indexes of 'frame'
 # And columns of 'front_vehicle_position', 'front_vehicle_speed', 'front_vehicle_acceleration', 
@@ -19,7 +19,7 @@ rawdata=pd.read_csv(path_to_file)
 # Add road conditions, traffic congestion as features.
 
 # Split dataset into train and test
-X_train, X_test, y_train, y_test = train_test_split(rawdata, rawdata['ego_speed'], test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(rawdata, rawdata['Ego vehicle velocity(m/s)'], test_size=0.2, random_state=42)
 
 # Standardize dataset
 scaler = StandardScaler()
